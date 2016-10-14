@@ -1,7 +1,5 @@
 package com.practice1;
 
-import org.apache.hadoop.io.Text;
-
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

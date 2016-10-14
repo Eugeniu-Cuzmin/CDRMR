@@ -1,17 +1,5 @@
 package com.practice1;
 
-import org.apache.hadoop.io.Text;
-import org.apache.hadoop.io.WritableComparable;
-import org.apache.hadoop.mapred.Mapper;
-import org.apache.hadoop.mrunit.types.Pair;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.List;
-import org.apache.hadoop.mrunit.MapReduceDriver;
-
 public class TestUtils {
 //    public static void loadInputText(String inputPath,
 //                                     MapReduceDriver mapReduceDriver,

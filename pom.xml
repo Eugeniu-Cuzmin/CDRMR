@@ -39,14 +39,14 @@
       <version>2.7.2</version>
     </dependency>
 
-    <dependency>
-      <groupId>org.apache.mrunit</groupId>
-      <artifactId>mrunit</artifactId>
-      <version>0.8.0-incubating</version>
-    </dependency>
+      <dependency>
+          <groupId>org.apache.mrunit</groupId>
+          <artifactId>mrunit</artifactId>
+          <version>1.1.0</version>
+          <classifier>hadoop2</classifier>
+      </dependency>
 
-
-    <dependency>
+      <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
       <version>4.10</version>
