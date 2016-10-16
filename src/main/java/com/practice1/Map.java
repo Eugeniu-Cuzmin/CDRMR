@@ -13,10 +13,12 @@ public class Map extends Mapper<WritableComparable, Text, Text, Text> {
 
     @Override
     public void map(WritableComparable key, Text value, Context context) throws IOException, InterruptedException {
-
         //split string
-        String[] row = value.toString().split("[|]");
+        String[] row = value.toString().split("[|]", -1);
 
+        if (row[SERVICE_TYPE].equals("")){
+            row[SERVICE_TYPE] = "empty";
+        }
         //define key/value pairs
         Text keyString = new Text(row[SUBSCRIBER_NO]);
         Text valueString = new Text(row[CHANNEL_SEIZURE_DATE_TIME] + " " + row[SERVICE_TYPE]);
