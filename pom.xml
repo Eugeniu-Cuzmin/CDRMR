@@ -19,6 +19,15 @@
     </build>
     <packaging>jar</packaging>
 
+<repositories>
+    <repository>
+        <id>ru.at_consulting</id>
+        <name>AT</name>
+        <url>http://192.168.36.82:8081/nexus/content/repositories/public/</url>
+        <layout>default</layout>
+    </repository>
+</repositories>
+
   <name>practice</name>
   <url>http://maven.apache.org</url>
 
@@ -44,6 +53,12 @@
           <artifactId>mrunit</artifactId>
           <version>1.1.0</version>
           <classifier>hadoop2</classifier>
+      </dependency>
+
+      <dependency>
+          <groupId>ru.at_consulting.bigdata</groupId>
+          <artifactId>atc-tools</artifactId>
+          <version>0.4.14-SNAPSHOT</version>
       </dependency>
 
       <dependency>

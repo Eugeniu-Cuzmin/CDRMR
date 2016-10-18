@@ -10,24 +10,13 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 import org.apache.hadoop.io.WritableComparable;
+import ru.at_consulting.bigdata.secondary_sort.ComparedKey;
 
 
 public class TestUtils {
     public static final String KEY_VALUE_SEPARATOR = "\t";
 
-    public static void loadInputText(String inputPath, MapReduceDriver mapReduceDriver) throws IOException {
-        WritableComparable KEY = new Text();
-        BufferedReader inputReader = new BufferedReader(new FileReader(inputPath));
-        List<Pair<WritableComparable, Text>> input = new ArrayList<>();
-        String line;
-        while ((line = inputReader.readLine()) != null) {
-            input.add(new Pair<>(KEY, new Text(line)));
-        }
-        inputReader.close();
-        mapReduceDriver.addAll(input);
-    }
-
-    public static void loadInputText(String inputPath1, String inputPath2, MultipleInputsMapReduceDriver<TextTuple, TextTuple, Text, Text> driver, Map mapper, MapDim mapperDim) throws IOException {
+    public static void loadInputText(String inputPath1, String inputPath2, MultipleInputsMapReduceDriver<ComparedKey, Text, Text, Text> driver, Map mapper, MapDim mapperDim) throws IOException {
         WritableComparable KEY = new Text();
 
         BufferedReader inputReader1 = new BufferedReader(new FileReader(inputPath1));

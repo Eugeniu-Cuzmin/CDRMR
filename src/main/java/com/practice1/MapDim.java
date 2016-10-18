@@ -3,10 +3,12 @@ package com.practice1;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Mapper;
+import ru.at_consulting.bigdata.secondary_sort.ComparedKey;
+import ru.at_consulting.bigdata.specs.Cdr;
 
 import java.io.IOException;
 
-public class MapDim extends Mapper<WritableComparable, Text, TextTuple, TextTuple>{
+public class MapDim extends Mapper<WritableComparable, Text, ComparedKey, Text>{
 
     private static final int BAN_KEY = 0;
     private static final int SUBS_KEY = 1;
@@ -26,9 +28,10 @@ public class MapDim extends Mapper<WritableComparable, Text, TextTuple, TextTupl
         String keyDim = row[SUBS_KEY];
         String valueDim = row[BAN_KEY] + " " + row[MARKET_KEY_SRC] + " " + row[ACCOUNT_TYPE_KEY] + " " + row[CURR_SUBS_STATUS_KEY];
 
-        outKey.set(keyDim, sortChar);
-        outValue.set("dim", valueDim);
+        ComparedKey comparedKey = new ComparedKey();
+        comparedKey.setKey(keyDim);
+        comparedKey.setComparedState(2);
 
-        context.write(outKey, outValue);
+        context.write(comparedKey, new Text(valueDim));
     }
 }

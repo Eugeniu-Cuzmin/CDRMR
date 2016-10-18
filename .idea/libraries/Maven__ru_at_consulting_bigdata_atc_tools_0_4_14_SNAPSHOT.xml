@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: ru.at_consulting.bigdata:atc-tools:0.4.14-SNAPSHOT">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/at_consulting/bigdata/atc-tools/0.4.14-SNAPSHOT/atc-tools-0.4.14-20150904.092909-1.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/at_consulting/bigdata/atc-tools/0.4.14-SNAPSHOT/atc-tools-0.4.14-20150904.092909-1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/ru/at_consulting/bigdata/atc-tools/0.4.14-SNAPSHOT/atc-tools-0.4.14-20150904.092909-1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

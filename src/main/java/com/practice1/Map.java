@@ -3,10 +3,11 @@ package com.practice1;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Mapper;
+import ru.at_consulting.bigdata.secondary_sort.ComparedKey;
 
 import java.io.IOException;
 
-public class Map extends Mapper<WritableComparable, Text, TextTuple, TextTuple> {
+public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
     private static final int SUBSCRIBER_NO = 1;
     private static final int CHANNEL_SEIZURE_DATE_TIME = 2;
     private static final int SERVICE_TYPE = 32;
@@ -28,10 +29,10 @@ public class Map extends Mapper<WritableComparable, Text, TextTuple, TextTuple> 
         String keyCdr = row[SUBSCRIBER_NO];
         String valueCdr = row[CHANNEL_SEIZURE_DATE_TIME] + " " + row[SERVICE_TYPE];
 
-        outKey.set(keyCdr, sortChar);
-        outValue.set("cdr", valueCdr);
-
+        ComparedKey comparedKey = new ComparedKey();
+        comparedKey.setKey(keyCdr);
+        comparedKey.setComparedState(1);
         //result
-        context.write(outKey, outValue);
+        context.write(comparedKey, new Text(valueCdr));
     }
 }
