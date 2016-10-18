@@ -41,7 +41,7 @@ public class SecondarySort {
     }
 
     // But sort by cdr_key and the sortCharacter
-    // remember cdr has a sort character of 'a'
+    // cdr has a sort character of 'a'
     // and dim has a sort character of 'b'
     // so the first record will be the cdr record!
     public static class SSSortComparator extends TTRawComparator {

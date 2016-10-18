@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e44b172-e2fe-4b3e-aaec-4df10adf3286" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/SecondarySort.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/TextTuple.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/practice1/Test1.java" afterPath="$PROJECT_DIR$/src/test/java/com/practice1/Test1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/practice1/TestUtils.java" afterPath="$PROJECT_DIR$/src/test/java/com/practice1/TestUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/SecondarySort.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/SecondarySort.java" />
     </list>
     <ignored path="CDRMR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -40,7 +33,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="KeyClass.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="KeyClass.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/KeyClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
@@ -84,11 +77,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SecondarySort.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SecondarySort.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/SecondarySort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+            <state relative-caret-position="371">
+              <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#1236#1237#0" expanded="true" />
@@ -101,21 +94,11 @@
       <file leaf-file-name="Test1.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/practice1/Test1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="-717">
+              <caret line="19" column="33" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/practice1/TestUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-69">
-              <caret line="29" column="125" selection-start-line="29" selection-start-column="125" selection-end-line="29" selection-end-column="125" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -165,10 +148,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/practice1/TextTuple.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/practice1/SecondarySort.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/practice1/Test1.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/practice1/TestUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice1/SecondarySort.java" />
       </list>
     </option>
   </component>
@@ -960,7 +943,7 @@
       <workItem from="1476632877853" duration="959000" />
       <workItem from="1476685872626" duration="26229000" />
       <workItem from="1476772653406" duration="2395000" />
-      <workItem from="1476776336423" duration="4767000" />
+      <workItem from="1476776336423" duration="5070000" />
     </task>
     <servers />
   </component>
@@ -997,7 +980,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="98523000" />
+    <option name="totallyTimeSpent" value="98826000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -1346,40 +1329,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/SecondarySort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="20" column="35" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1236#1237#0" expanded="true" />
-            <element signature="e#1300#1301#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Map.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="57">
           <caret line="8" column="67" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="67" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice1/TestUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-69">
-          <caret line="29" column="125" selection-start-line="29" selection-start-column="125" selection-end-line="29" selection-end-column="125" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice1/Test1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1392,6 +1345,36 @@
           <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="10" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice1/TestUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="29" column="125" selection-start-line="29" selection-start-column="125" selection-end-line="29" selection-end-column="125" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/practice1/Test1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-717">
+          <caret line="19" column="33" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/SecondarySort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="43" column="7" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1236#1237#0" expanded="true" />
+            <element signature="e#1300#1301#0" expanded="true" />
           </folding>
         </state>
       </provider>
