@@ -12,18 +12,10 @@ public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
     private static final int CHANNEL_SEIZURE_DATE_TIME = 2;
     private static final int SERVICE_TYPE = 32;
 
-    TextTuple outKey = new TextTuple();
-    TextTuple outValue = new TextTuple();
-    String sortChar = "a";
-
     @Override
     public void map(WritableComparable key, Text value, Context context) throws IOException, InterruptedException {
         //split string
         String[] row = value.toString().split("[|]", -1);
-
-        if (row[SERVICE_TYPE].equals("")){
-            row[SERVICE_TYPE] = "empty";
-        }
 
         //define key/value pairs
         String keyCdr = row[SUBSCRIBER_NO];
@@ -32,6 +24,7 @@ public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
         ComparedKey comparedKey = new ComparedKey();
         comparedKey.setKey(keyCdr);
         comparedKey.setComparedState(1);
+
         //result
         context.write(comparedKey, new Text(valueCdr));
     }

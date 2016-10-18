@@ -15,11 +15,7 @@ public class MapDim extends Mapper<WritableComparable, Text, ComparedKey, Text>{
     private static final int MARKET_KEY_SRC = 3;
     private static final int ACCOUNT_TYPE_KEY = 4;
     private static final int CURR_SUBS_STATUS_KEY = 7;
-
-    TextTuple outKey = new TextTuple();
-    TextTuple outValue = new TextTuple();
-    String sortChar = "b";
-
+    Cdr cdr;
     @Override
     public void map(WritableComparable key, Text value, Context context) throws IOException, InterruptedException {
         //split string

@@ -23,7 +23,6 @@ public class Test1 {
         Reduce reducer = new Reduce();
         GroupingKeyComparator groupingKeyComparator = new GroupingKeyComparator();
         CompositeKeyComparator compositeKeyComparator = new CompositeKeyComparator();
-
         driver = MultipleInputsMapReduceDriver.newMultipleInputMapReduceDriver();
 
         driver.addMapper(mapper);
@@ -31,6 +30,7 @@ public class Test1 {
 
         driver.setKeyGroupingComparator(groupingKeyComparator);
         driver.setKeyOrderComparator(compositeKeyComparator);
+//        driver.setKeyComparator(compositeKeyComparator);
 
         driver.setReducer(reducer);
     }
