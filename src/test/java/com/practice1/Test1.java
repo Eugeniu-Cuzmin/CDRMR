@@ -14,10 +14,10 @@ import java.io.IOException;
 import java.util.List;
 
 public class Test1 {
-    MapReduceDriver<WritableComparable, Text, Text, Text, Text, Text> mapReduceDriver;
+    //MapReduceDriver<WritableComparable, Text, Text, Text, Text, Text> mapReduceDriver;
     Map mapper = new Map();
     MapDim mapperDim = new MapDim();
-    MultipleInputsMapReduceDriver<Text, Text, Text, Text> driver;
+    MultipleInputsMapReduceDriver<TextTuple, TextTuple, Text, Text> driver;
 
     @Before
     public void setUp(){
@@ -27,9 +27,9 @@ public class Test1 {
 //        driver =  MultipleInputsMapReduceDriver.newMultipleInputMapReduceDriver();
 //        driver.addMapper(mapper);
 //        driver.setReducer(reducer);
-        mapReduceDriver = new MapReduceDriver<WritableComparable, Text, Text, Text, Text, Text>();
-        mapReduceDriver.setMapper(mapper);
-        mapReduceDriver.setReducer(reducer);
+//        mapReduceDriver = new MapReduceDriver<WritableComparable, Text, Text, Text, Text, Text>();
+//        mapReduceDriver.setMapper(mapper);
+//        mapReduceDriver.setReducer(reducer);
 
         driver = MultipleInputsMapReduceDriver.newMultipleInputMapReduceDriver();;
         driver.addMapper(mapper);

@@ -13,19 +13,19 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-public class Reduce extends Reducer<Text, Text, Text, Text> {
+public class Reduce extends Reducer<TextTuple, TextTuple, Text, Text> {
     UtilClass utilClass = new UtilClass();
     Text theKey = null;
 
     @Override
-    public void reduce(Text key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
+    public void reduce(TextTuple key, Iterable<TextTuple> values, Context context) throws IOException, InterruptedException {
         String string = "";
         String result = "";
-        if (KeyClass.keys.contains(key)) {
+
             HashMap<Text, Integer> m = new HashMap<>();
 
             //Populate the HashMap
-            for (Text value : values) {
+            for (TextTuple value : values) {
                 //check if left table
                 String[] stringValue = value.toString().split(" ");
                 if (stringValue[0].equals("cdr")) {
@@ -51,6 +51,5 @@ public class Reduce extends Reducer<Text, Text, Text, Text> {
             }
             utilClass.foundString = 0;
             context.write(key, new Text(string + result));
-        }
     }
 }

@@ -27,7 +27,7 @@ public class TestUtils {
         mapReduceDriver.addAll(input);
     }
 
-    public static void loadInputText(String inputPath1, String inputPath2, MultipleInputsMapReduceDriver<Text, Text, Text, Text> driver, Map mapper, MapDim mapperDim) throws IOException {
+    public static void loadInputText(String inputPath1, String inputPath2, MultipleInputsMapReduceDriver<TextTuple, TextTuple, Text, Text> driver, Map mapper, MapDim mapperDim) throws IOException {
         WritableComparable KEY = new Text();
 
         BufferedReader inputReader1 = new BufferedReader(new FileReader(inputPath1));
