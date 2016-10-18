@@ -8,6 +8,7 @@ import java.util.Date;
 public class UtilClass {
 
     private String[] split;
+    public static int foundString = 0;
 
     public String getPeriod(String s) {
         split = s.split(" ");
@@ -29,5 +30,17 @@ public class UtilClass {
         else if(hour > 11 && hour <= 18){return "day";}
         else if(hour > 18 && hour <= 23){return "evening";}
         else {return "night";}
+    }
+
+
+    public static String findString(String[] stringValue) {
+        if(stringValue[3].equals("A") || stringValue[3].equals("S")){
+            foundString = 1;
+            return stringValue[0] + " " + stringValue[1] + " " + stringValue[2] + " ";
+        }
+        else{
+            return stringValue[0] + " " + stringValue[1] + " " + stringValue[2] + " ";
+        }
+
     }
 }

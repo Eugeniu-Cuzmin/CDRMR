@@ -5,6 +5,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mrunit.mapreduce.MapReduceDriver;
+import org.apache.hadoop.mrunit.mapreduce.MultipleInputsMapReduceDriver;
 import org.apache.hadoop.mrunit.types.Pair;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +16,8 @@ import java.util.List;
 public class Test1 {
     MapReduceDriver<WritableComparable, Text, Text, Text, Text, Text> mapReduceDriver;
     Map mapper = new Map();
-//    MultipleInputsMapReduceDriver driver;
+    MapDim mapperDim = new MapDim();
+    MultipleInputsMapReduceDriver<Text, Text, Text, Text> driver;
 
     @Before
     public void setUp(){
@@ -28,6 +30,11 @@ public class Test1 {
         mapReduceDriver = new MapReduceDriver<WritableComparable, Text, Text, Text, Text, Text>();
         mapReduceDriver.setMapper(mapper);
         mapReduceDriver.setReducer(reducer);
+
+        driver = MultipleInputsMapReduceDriver.newMultipleInputMapReduceDriver();;
+        driver.addMapper(mapper);
+        driver.addMapper(mapperDim);
+        driver.setReducer(reducer);
     }
 
 //    @Test
@@ -54,7 +61,7 @@ public class Test1 {
         }
     }*/
 
-    @Test
+    /*@Test
     public void testMapReduceWithInputFile() throws IOException {
         // Loading paths
         String inputPath = "src\\test\\resources\\cdr.csv";
@@ -63,6 +70,19 @@ public class Test1 {
 
         // Saving result
         List<Pair<Text, Text>> output = mapReduceDriver.run();
+        TestUtils.sequenceToCsv(output, outputPath);
+    }*/
+
+    @Test
+    public void testDriver() throws IOException {
+        //paths
+        String inputPath1 = "src\\test\\resources\\cdr.csv";
+        String inputPath2 = "src\\test\\resources\\DIM_SUBSCRIBER.csv";
+        String outputPath = "src\\test\\resources\\out\\OUTPUT2.csv";
+
+        TestUtils.loadInputText(inputPath1, inputPath2, driver, mapper, mapperDim);
+
+        List<Pair<Text, Text>> output = driver.run();
         TestUtils.sequenceToCsv(output, outputPath);
     }
 }

@@ -21,8 +21,9 @@ public class Map extends Mapper<WritableComparable, Text, Text, Text> {
         }
         //define key/value pairs
         Text keyString = new Text(row[SUBSCRIBER_NO]);
-        Text valueString = new Text(row[CHANNEL_SEIZURE_DATE_TIME] + " " + row[SERVICE_TYPE]);
+        Text valueString = new Text("cdr " + row[CHANNEL_SEIZURE_DATE_TIME] + " " + row[SERVICE_TYPE]);
 
+        KeyClass.keys.add(keyString);
         //result
         context.write(keyString, valueString);
     }
