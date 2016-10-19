@@ -18,16 +18,20 @@ public class MapDim extends Mapper<WritableComparable, Text, ComparedKey, Text>{
     Cdr cdr;
     @Override
     public void map(WritableComparable key, Text value, Context context) throws IOException, InterruptedException {
-        //split string
-        String[] row = value.toString().split("\u0001");
 
-        String keyDim = row[SUBS_KEY];
-        String valueDim = row[BAN_KEY] + " " + row[MARKET_KEY_SRC] + " " + row[ACCOUNT_TYPE_KEY] + " " + row[CURR_SUBS_STATUS_KEY];
+            //split string
+            String[] row = value.toString().split("\u0001");
 
-        ComparedKey comparedKey = new ComparedKey();
-        comparedKey.setKey(keyDim);
-        comparedKey.setComparedState(2);
+            String keyDim = row[SUBS_KEY];
+            String valueDim = row[BAN_KEY] + " " + row[MARKET_KEY_SRC] + " " + row[ACCOUNT_TYPE_KEY] + " " + row[CURR_SUBS_STATUS_KEY];
 
-        context.write(comparedKey, new Text(valueDim));
+            ComparedKey comparedKey = new ComparedKey();
+            comparedKey.setKey(keyDim);
+            comparedKey.setComparedState(1);
+
+        if(keyDim.length()>2){
+            context.write(comparedKey, new Text(valueDim));
+        }
+
     }
 }

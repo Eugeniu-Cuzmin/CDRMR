@@ -16,9 +16,10 @@ import java.util.List;
 import java.util.Map;
 
 public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
+    public static long l = 0;
     UtilClass utilClass = new UtilClass();
     Text theKey = null;
-    LongWritable longWritableCdr = new LongWritable(1);
+    LongWritable longWritableCdr = new LongWritable(0);
     LongWritable longWritableDir = new LongWritable(1);
 
     @Override
@@ -43,6 +44,8 @@ public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
                     string = utilClass.findString(stringValue);
                 }
             }
+            System.out.println(key);
+            System.out.println(l);
         }
         if(key.getComparedState().equals(longWritableCdr)){
             //Display the frequencies
@@ -54,9 +57,10 @@ public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
                 result += entry.getValue() + "_" + entry.getKey() + " ";
             }
             utilClass.foundString = 0;
-            System.out.println(key);
+//            System.out.println(key);
+//            System.out.println(result);
+            l++;
             context.write(key.getKey(), new Text(string + result));
         }
-
     }
 }

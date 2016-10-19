@@ -28,8 +28,8 @@ public class Test1 {
         driver.addMapper(mapper);
         driver.addMapper(mapperDim);
 
-        driver.setKeyGroupingComparator(groupingKeyComparator);
-        driver.setKeyOrderComparator(compositeKeyComparator);
+//        driver.setKeyGroupingComparator(compositeKeyComparator);
+//        driver.setKeyOrderComparator(compositeKeyComparator);
 //        driver.setKeyComparator(compositeKeyComparator);
 
         driver.setReducer(reducer);

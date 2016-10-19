@@ -23,7 +23,7 @@ public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
 
         ComparedKey comparedKey = new ComparedKey();
         comparedKey.setKey(keyCdr);
-        comparedKey.setComparedState(1);
+        comparedKey.setComparedState(0);
 
         //result
         context.write(comparedKey, new Text(valueCdr));
