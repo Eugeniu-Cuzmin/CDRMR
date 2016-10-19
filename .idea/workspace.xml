@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e44b172-e2fe-4b3e-aaec-4df10adf3286" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/numbers.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/practice1/Map.class" afterPath="$PROJECT_DIR$/target/classes/com/practice1/Map.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/practice1/Test1.class" afterPath="$PROJECT_DIR$/target/test-classes/com/practice1/Test1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/practice1/Test1.java" afterPath="$PROJECT_DIR$/src/test/java/com/practice1/Test1.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv" afterPath="$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/out/OUTPUT2.csv" afterPath="$PROJECT_DIR$/target/test-classes/out/OUTPUT2.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/MapClass.java" afterPath="" />
     </list>
     <ignored path="CDRMR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,10 +33,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Map.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
+            <state relative-caret-position="983">
               <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -63,7 +55,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OUTPUT2.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OUTPUT2.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="34">
@@ -941,7 +933,7 @@
       <workItem from="1476685872626" duration="26229000" />
       <workItem from="1476772653406" duration="2395000" />
       <workItem from="1476776336423" duration="25243000" />
-      <workItem from="1476859539705" duration="18414000" />
+      <workItem from="1476859539705" duration="18651000" />
     </task>
     <servers />
   </component>
@@ -978,11 +970,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137413000" />
+    <option name="totallyTimeSpent" value="137650000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -997,7 +989,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19440243" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1220,16 +1212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/MapClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/cdr.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
@@ -1278,16 +1260,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1297,6 +1269,24 @@
       </provider>
       <provider editor-type-id="LargeFileEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="983">
+          <caret line="70" column="5" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/MapClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="353">
+          <caret line="26" column="23" selection-start-line="26" selection-start-column="23" selection-end-line="26" selection-end-column="23" />
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>
