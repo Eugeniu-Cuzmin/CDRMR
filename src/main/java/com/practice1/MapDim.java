@@ -4,7 +4,6 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.io.WritableComparable;
 import org.apache.hadoop.mapreduce.Mapper;
 import ru.at_consulting.bigdata.secondary_sort.ComparedKey;
-import ru.at_consulting.bigdata.specs.Cdr;
 
 import java.io.IOException;
 

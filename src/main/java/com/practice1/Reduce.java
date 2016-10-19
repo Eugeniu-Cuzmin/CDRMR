@@ -1,19 +1,11 @@
 package com.practice1;
 
-import org.apache.commons.math3.stat.inference.TestUtils;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapred.JobConf;
-import org.apache.hadoop.mapred.OutputCollector;
-import org.apache.hadoop.mapred.Reporter;
 import org.apache.hadoop.mapreduce.Reducer;
 import ru.at_consulting.bigdata.secondary_sort.ComparedKey;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
 
 public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
     private static String result = "";

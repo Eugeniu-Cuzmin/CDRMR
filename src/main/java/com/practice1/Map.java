@@ -18,8 +18,6 @@ public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
     private static final int CHANNEL_SEIZURE_DATE_TIME = 2;
     private static final int SERVICE_TYPE = 32;
 
-
-
     private Set numbersFromCache = new HashSet();
 
     @Override
@@ -48,7 +46,6 @@ public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
         }
     }
 
-
     @Override
     public void map(WritableComparable key, Text value, Context context) throws IOException, InterruptedException {
         UtilClass utilClass = new UtilClass();
@@ -67,6 +64,5 @@ public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
         if(numbersFromCache.contains(row[SUBSCRIBER_NO])){
             context.write(comparedKey, new Text(valueCdr));
         }
-//        context.write(comparedKey, new Text(valueCdr));
     }
 }
