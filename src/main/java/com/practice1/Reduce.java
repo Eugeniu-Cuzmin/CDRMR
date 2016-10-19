@@ -18,7 +18,6 @@ import java.util.Map;
 public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
     private static String result = "";
     private static String string = "";
-    private static int join = 0;
 
     UtilClass utilClass = new UtilClass();
 
@@ -31,7 +30,6 @@ public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
         //if cdr, count number of calls
         if(key.getComparedState().equals(longWritableCdr)){
             result = utilClass.findNumberOfCalls(values, key);
-            join = 0;
         }
         //if dir and A/S string not found, find add values to result
         if(key.getComparedState().equals(longWritableDir)){

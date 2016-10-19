@@ -10,9 +10,6 @@ import java.util.*;
 
 public class UtilClass {
 
-    private String[] split;
-    public static int foundString = 0;
-
     public String getPeriod(String s) {
         return convertToString(s);
     }
@@ -34,16 +31,6 @@ public class UtilClass {
         else {return "night";}
     }
 
-
-    public static String findString(String[] stringValue) {
-        if(stringValue[3].equals("A") || stringValue[3].equals("S")){
-            UtilClass.foundString = 1;
-            return stringValue[0] + " " + stringValue[1] + " " + stringValue[2] + " ";
-        }
-        else{
-            return stringValue[0] + " " + stringValue[1] + " " + stringValue[2] + " ";
-        }
-    }
 
     public String findNumberOfCalls(Iterable<Text> values, ComparedKey key) {
         HashMap<Text, Integer> m = new HashMap<>();
