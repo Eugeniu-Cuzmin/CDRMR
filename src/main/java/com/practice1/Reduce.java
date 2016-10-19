@@ -33,13 +33,13 @@ public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
         if(key.getComparedState().equals(longWritableCdr)){
             result = utilClass.findNumberOfCalls(values, key);
             if(key.getKey().equals(keyText)){
-                context.write(key.getKey(), new Text(";" + string + ";" + result));
+                context.write(key.getKey(), new Text(string + ";" + result));
                 System.out.println(key.getKey().toString());
                 System.out.println(key.getKey().toString().length());
                 string = "";
             }
             else{
-                context.write(key.getKey(), new Text(";" + result));
+                context.write(key.getKey(), new Text(result));
             }
         }
     }

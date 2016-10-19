@@ -14,7 +14,7 @@ import ru.at_consulting.bigdata.secondary_sort.ComparedKey;
 
 
 public class TestUtils {
-    public static final String KEY_VALUE_SEPARATOR = "\t";
+    public static final String KEY_VALUE_SEPARATOR = ";";
 
     public static void loadInputText(String inputPath1, String inputPath2, MultipleInputsMapReduceDriver<ComparedKey, Text, Text, Text> driver, Map mapper, MapDim mapperDim) throws IOException {
         WritableComparable KEY = new Text();
