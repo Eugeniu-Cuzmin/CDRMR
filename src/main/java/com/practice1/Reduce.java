@@ -28,17 +28,18 @@ public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
             }
             keyText = key.getKey();
         }
-        System.out.println(string);
 
         //if cdr, count number of calls
         if(key.getComparedState().equals(longWritableCdr)){
             result = utilClass.findNumberOfCalls(values, key);
             if(key.getKey().equals(keyText)){
-                context.write(key.getKey(), new Text(string + " " + result));
+                context.write(key.getKey(), new Text(";" + string + ";" + result));
                 string = "";
             }
             else{
-                context.write(key.getKey(), new Text(result));
+//                key.getKey().toString().replace("\t","");
+                context.write(key.getKey(), new Text(";" + result));
+//                context.write(new Text(key.getKey().toString().replace("\t","")), new Text(";" + result));
             }
 
         }

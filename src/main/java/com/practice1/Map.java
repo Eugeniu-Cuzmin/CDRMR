@@ -55,13 +55,14 @@ public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
 
         //define key/value pairs
         String keyCdr = row[SUBSCRIBER_NO];
-        String valueCdr = utilClass.getPeriod(row[CHANNEL_SEIZURE_DATE_TIME]) + " " + row[SERVICE_TYPE];
+        String valueCdr = utilClass.getPeriod(row[CHANNEL_SEIZURE_DATE_TIME]) + ";" + row[SERVICE_TYPE];
 
         ComparedKey comparedKey = new ComparedKey();
         comparedKey.setKey(keyCdr);
         comparedKey.setComparedState(1);
 
         if(numbersFromCache.contains(row[SUBSCRIBER_NO])){
+//            System.out.println(comparedKey);
             context.write(comparedKey, new Text(valueCdr));
         }
     }

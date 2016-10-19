@@ -24,11 +24,11 @@ public class UtilClass {
             e.printStackTrace();
         }
         int hour = date.getHours();
-
-        if(hour > 6 && hour <= 11){return "morning";}
-        else if(hour > 11 && hour <= 18){return "day";}
-        else if(hour > 18 && hour <= 23){return "evening";}
-        else {return "night";}
+        //1 for morning, 2 for day, 3 for evening, 4 for night
+        if(hour > 6 && hour <= 11){return "1";}
+        else if(hour > 11 && hour <= 18){return "2";}
+        else if(hour > 18 && hour <= 23){return "3";}
+        else {return "4";}
     }
 
 
@@ -39,8 +39,8 @@ public class UtilClass {
 
         //Populate the HashMap
         for (Text value : values) {
-            String[] stringValue = value.toString().split(" ");
-            Text element = new Text(stringValue[0] + " " + stringValue[1]);
+            String[] stringValue = value.toString().split(";");
+            Text element = new Text(stringValue[0] + "_" + stringValue[1]);
 
             if (m.get(element) == null) {
                 m.put(element, 1);
@@ -55,7 +55,7 @@ public class UtilClass {
                 result = "";
                 theKey = key.getKey();
             }
-            result += entry.getValue() + " " + entry.getKey() + " ";
+            result += entry.getValue() + "_" + entry.getKey() + ";";
         }
         return result;
     }

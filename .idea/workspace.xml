@@ -2,18 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e44b172-e2fe-4b3e-aaec-4df10adf3286" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/practice1/MapClass.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/practice1/Map.class" afterPath="$PROJECT_DIR$/target/classes/com/practice1/Map.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/practice1/MapDim.class" afterPath="$PROJECT_DIR$/target/classes/com/practice1/MapDim.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/practice1/Reduce.class" afterPath="$PROJECT_DIR$/target/classes/com/practice1/Reduce.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/numbers.txt" afterPath="$PROJECT_DIR$/src/test/resources/numbers.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/UtilClass.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/UtilClass.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv" afterPath="$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/numbers.txt" afterPath="$PROJECT_DIR$/target/test-classes/numbers.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/out/OUTPUT2.csv" afterPath="$PROJECT_DIR$/target/test-classes/out/OUTPUT2.csv" />
     </list>
     <ignored path="CDRMR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,8 +40,8 @@
       <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
+            <state relative-caret-position="235">
+              <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -59,8 +52,8 @@
       <file leaf-file-name="MapDim.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+            <state relative-caret-position="196">
+              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -68,23 +61,37 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OUTPUT2.csv" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OUTPUT2.csv" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="14" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
+            <state relative-caret-position="34">
+              <caret line="2" column="12" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reduce.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Reduce.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+            <state relative-caret-position="264">
+              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UtilClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/UtilClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="57" column="66" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#301#302#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -133,15 +140,15 @@
         <option value="$PROJECT_DIR$/src/test/resources/cdr.csv" />
         <option value="$PROJECT_DIR$/src/test/resources/DIM_SUBSCRIBER.csv" />
         <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/practice1/UtilClass.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice1/Ddfgdfh.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/practice1/MapClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/practice1/Test1.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java" />
         <option value="$PROJECT_DIR$/src/test/resources/numbers.txt" />
-        <option value="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" />
         <option value="$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice1/UtilClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" />
       </list>
     </option>
   </component>
@@ -938,44 +945,44 @@
       <workItem from="1476685872626" duration="26229000" />
       <workItem from="1476772653406" duration="2395000" />
       <workItem from="1476776336423" duration="25243000" />
-      <workItem from="1476859539705" duration="21012000" />
+      <workItem from="1476859539705" duration="24446000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test1 - 2016.10.19 at 15h 15m 52s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 43m 30s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 15h 16m 41s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 43m 57s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 15h 17m 09s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 44m 42s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 15h 49m 37s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 46m 39s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 15h 50m 44s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 47m 13s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 15h 52m 33s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 49m 50s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 15h 52m 52s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 52m 53s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 15h 53m 17s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 53m 21s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 15h 53m 41s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 55m 36s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 15h 59m 37s.xml">
+    <history-entry file="Test1 - 2016.10.19 at 16h 58m 40s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140011000" />
+    <option name="totallyTimeSpent" value="143445000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
@@ -990,7 +997,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.45261437" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32189542" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3137255" sideWeight="0.49394855" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1215,16 +1222,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/cdr.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="319">
@@ -1249,26 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Map.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/UtilClass.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-217">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/practice1/Test1.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -1277,10 +1254,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/UtilClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="37" column="22" selection-start-line="37" selection-start-column="22" selection-end-line="37" selection-end-column="22" />
+        <state relative-caret-position="371">
+          <caret line="57" column="66" selection-start-line="57" selection-start-column="66" selection-end-line="57" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Map.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1289,13 +1288,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="14" />
+        <state relative-caret-position="34">
+          <caret line="2" column="12" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="12" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="LargeFileEditor">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>

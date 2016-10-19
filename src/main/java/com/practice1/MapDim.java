@@ -20,16 +20,14 @@ public class MapDim extends Mapper<WritableComparable, Text, ComparedKey, Text>{
         String[] row = value.toString().split("\u0001");
 
         String keyDim = row[SUBS_KEY];
-        String valueDim = row[BAN_KEY] + " " + row[MARKET_KEY_SRC] + " " + row[ACCOUNT_TYPE_KEY];
+        String valueDim = row[BAN_KEY] + ";" + row[MARKET_KEY_SRC] + ";" + row[ACCOUNT_TYPE_KEY];
 
         ComparedKey comparedKey = new ComparedKey();
         comparedKey.setKey(keyDim);
         comparedKey.setComparedState(0);
 
-        if(row[CURR_SUBS_STATUS_KEY].equals("A") || row[CURR_SUBS_STATUS_KEY].equals("S")){
-            context.write(comparedKey, new Text(valueDim));
-        }
-        else{
+        if(row[CURR_SUBS_STATUS_KEY].equals("A") || row[CURR_SUBS_STATUS_KEY].equals("S")) {
+            System.out.println(comparedKey);
             context.write(comparedKey, new Text(valueDim));
         }
     }
