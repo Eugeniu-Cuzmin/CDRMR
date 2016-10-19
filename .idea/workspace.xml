@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e44b172-e2fe-4b3e-aaec-4df10adf3286" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/practice1/Map.class" afterPath="$PROJECT_DIR$/target/classes/com/practice1/Map.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/practice1/MapDim.class" afterPath="$PROJECT_DIR$/target/classes/com/practice1/MapDim.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/practice1/Reduce.class" afterPath="$PROJECT_DIR$/target/classes/com/practice1/Reduce.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/Map.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/practice1/UtilClass.java" afterPath="$PROJECT_DIR$/src/main/java/com/practice1/UtilClass.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv" afterPath="$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv" />
     </list>
     <ignored path="CDRMR.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,11 +39,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="ComparedKey.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$MAVEN_REPOSITORY$/ru/at_consulting/bigdata/atc-tools/0.4.14-SNAPSHOT/atc-tools-0.4.14-20150904.092909-1.jar!/ru/at_consulting/bigdata/secondary_sort/ComparedKey.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-170">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Map.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Map.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+            <state relative-caret-position="371">
+              <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,8 +64,8 @@
       <file leaf-file-name="MapDim.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+            <state relative-caret-position="179">
+              <caret line="28" column="92" selection-start-line="28" selection-start-column="92" selection-end-line="28" selection-end-column="92" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,21 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="OUTPUT2.csv" pinned="false" current-in-tab="false">
+      <file leaf-file-name="OUTPUT2.csv" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="12" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="12" />
+            <state relative-caret-position="17">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="51" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reduce.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Reduce.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
+            <state relative-caret-position="179">
+              <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -945,26 +957,11 @@
       <workItem from="1476685872626" duration="26229000" />
       <workItem from="1476772653406" duration="2395000" />
       <workItem from="1476776336423" duration="25243000" />
-      <workItem from="1476859539705" duration="24446000" />
+      <workItem from="1476859539705" duration="25633000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Test1 - 2016.10.19 at 16h 43m 30s.xml">
-      <configuration name="Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 16h 43m 57s.xml">
-      <configuration name="Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 16h 44m 42s.xml">
-      <configuration name="Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 16h 46m 39s.xml">
-      <configuration name="Test1" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Test1 - 2016.10.19 at 16h 47m 13s.xml">
-      <configuration name="Test1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Test1 - 2016.10.19 at 16h 49m 50s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
@@ -980,12 +977,27 @@
     <history-entry file="Test1 - 2016.10.19 at 16h 58m 40s.xml">
       <configuration name="Test1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="Test1 - 2016.10.19 at 17h 02m 57s.xml">
+      <configuration name="Test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test1 - 2016.10.19 at 17h 04m 09s.xml">
+      <configuration name="Test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test1 - 2016.10.19 at 17h 15m 30s.xml">
+      <configuration name="Test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test1 - 2016.10.19 at 17h 15m 51s.xml">
+      <configuration name="Test1" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Test1 - 2016.10.19 at 17h 16m 17s.xml">
+      <configuration name="Test1" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143445000" />
+    <option name="totallyTimeSpent" value="144632000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1174,14 +1186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/ru/at_consulting/bigdata/atc-tools/0.4.14-SNAPSHOT/atc-tools-0.4.14-20150904.092909-1.jar!/ru/at_consulting/bigdata/secondary_sort/ComparedKey.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="6" column="24" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -1268,8 +1272,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Map.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="56" column="42" selection-start-line="56" selection-start-column="42" selection-end-line="56" selection-end-column="42" />
+        <state relative-caret-position="371">
+          <caret line="63" column="58" selection-start-line="63" selection-start-column="58" selection-end-line="63" selection-end-column="58" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/ru/at_consulting/bigdata/atc-tools/0.4.14-SNAPSHOT/atc-tools-0.4.14-20150904.092909-1.jar!/ru/at_consulting/bigdata/secondary_sort/ComparedKey.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="179">
+          <caret line="41" column="68" selection-start-line="41" selection-start-column="68" selection-end-line="41" selection-end-column="68" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1278,8 +1300,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/MapDim.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="29" column="42" selection-start-line="29" selection-start-column="42" selection-end-line="29" selection-end-column="42" />
+        <state relative-caret-position="179">
+          <caret line="28" column="92" selection-start-line="28" selection-start-column="92" selection-end-line="28" selection-end-column="92" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1288,23 +1310,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/resources/out/OUTPUT2.csv">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="12" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="12" />
+        <state relative-caret-position="17">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="51" />
           <folding />
         </state>
       </provider>
       <provider editor-type-id="LargeFileEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/practice1/Reduce.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="41" column="28" selection-start-line="41" selection-start-column="28" selection-end-line="41" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
       </provider>
     </entry>
   </component>

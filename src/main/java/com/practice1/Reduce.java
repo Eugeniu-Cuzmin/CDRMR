@@ -34,15 +34,13 @@ public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
             result = utilClass.findNumberOfCalls(values, key);
             if(key.getKey().equals(keyText)){
                 context.write(key.getKey(), new Text(";" + string + ";" + result));
+                System.out.println(key.getKey().toString());
+                System.out.println(key.getKey().toString().length());
                 string = "";
             }
             else{
-//                key.getKey().toString().replace("\t","");
                 context.write(key.getKey(), new Text(";" + result));
-//                context.write(new Text(key.getKey().toString().replace("\t","")), new Text(";" + result));
             }
-
         }
-
     }
 }
