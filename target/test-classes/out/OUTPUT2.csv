@@ -1,11 +1,7 @@
-0000000000	1 day V 1 evening S 
-902996760100000	2 evening S 2 evening V 1 night V 2 morning V 1 day S 
-9029967602	2 day V 1 evening S 4 evening V 3 day S 
-90299676030000	1 day V 9 day S 
-9029967604	1 day V 1 morning S 2 morning V 1 day S 
-905000	1 evening V 
-9050000001	24 day V 12 evening S 26 evening V 25 day S 
-9050000002	12 day V 12 evening S 
-9050000011	6 day V 6 evening V 6 day S 
-9050000021	6 evening S 6 day S 
-9050000031	12 day V 6 evening S 6 evening V 
+0000000000	2.82505251E8 RND 131.0 2 day V 2 evening S 
+902996760100000	5.78702664E8 RND 313.0 2 evening S 2 evening V 1 night V 2 morning V 1 day S 
+9029967602	6.2668527E7 RND 15.0 2 day V 1 evening S 4 evening V 3 day S 
+90299676030000	4.31409867E8 VIP 13.0 2 day V 18 day S 
+9029967604	1.93888947E8 VIP 13.0 1 day V 1 morning S 2 morning V 1 day S 
+905000	1.70074906E8 VIP 13.0 1 evening V 
+9050491245	9.0772452E7 VRN 13.0 12 day V 6 evening S 6 evening V 

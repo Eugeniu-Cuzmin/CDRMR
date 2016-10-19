@@ -35,11 +35,10 @@ public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
             for (Text value : values) {
                 string = value.toString();
             }
-            result =string + result;
         }
 
         if(key.getComparedState().equals(longWritableDir) && result.length()>0){
-            context.write(key.getKey(), new Text(result));
+            context.write(key.getKey(), new Text(string + " " + result));
             result = "";
         }
     }

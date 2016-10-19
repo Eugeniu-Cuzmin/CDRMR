@@ -16,6 +16,7 @@ public class Test1 {
     Map mapper = new Map();
     MapDim mapperDim = new MapDim();
     MultipleInputsMapReduceDriver<ComparedKey, Text, Text, Text> driver;
+    String filePath = "src\\test\\resources\\numbers.txt";
 
     @Before
     public void setUp(){
@@ -24,9 +25,9 @@ public class Test1 {
         GroupingKeyComparator groupingKeyComparator = new GroupingKeyComparator();
         CompositeKeyComparator compositeKeyComparator = new CompositeKeyComparator();
         driver = MultipleInputsMapReduceDriver.newMultipleInputMapReduceDriver();
-
         driver.addMapper(mapper);
         driver.addMapper(mapperDim);
+        driver.addCacheFile(filePath);
 
 //        driver.setKeyGroupingComparator(compositeKeyComparator);
 //        driver.setKeyOrderComparator(compositeKeyComparator);
