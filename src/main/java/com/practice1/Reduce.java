@@ -17,7 +17,6 @@ import java.util.Map;
 
 public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
     private static String result = "";
-    private static String string = "";
 
     UtilClass utilClass = new UtilClass();
 
@@ -26,22 +25,22 @@ public class Reduce extends Reducer<ComparedKey, Text, Text, Text> {
 
     @Override
     public void reduce(ComparedKey key, Iterable<Text> values, Context context) throws IOException, InterruptedException {
-
+        String string = "";
         //if cdr, count number of calls
         if(key.getComparedState().equals(longWritableCdr)){
             result = utilClass.findNumberOfCalls(values, key);
         }
-        //if dir and A/S string not found, find add values to result
-        if(key.getComparedState().equals(longWritableDir)){
+        //if dir add values to result
+        if(key.getComparedState().equals(longWritableDir) && result.length()>0){
             for (Text value : values) {
                 string = value.toString();
             }
+            result =string + result;
         }
 
         if(key.getComparedState().equals(longWritableDir) && result.length()>0){
-            context.write(key.getKey(), new Text(string + result));
+            context.write(key.getKey(), new Text(result));
             result = "";
-            string = "";
         }
     }
 }
