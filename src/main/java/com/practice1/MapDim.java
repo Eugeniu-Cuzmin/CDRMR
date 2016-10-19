@@ -24,7 +24,7 @@ public class MapDim extends Mapper<WritableComparable, Text, ComparedKey, Text>{
 
         ComparedKey comparedKey = new ComparedKey();
         comparedKey.setKey(keyDim);
-        comparedKey.setComparedState(1);
+        comparedKey.setComparedState(0);
 
         if(row[CURR_SUBS_STATUS_KEY].equals("A") || row[CURR_SUBS_STATUS_KEY].equals("S")){
             context.write(comparedKey, new Text(valueDim));

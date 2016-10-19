@@ -59,7 +59,7 @@ public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
 
         ComparedKey comparedKey = new ComparedKey();
         comparedKey.setKey(keyCdr);
-        comparedKey.setComparedState(0);
+        comparedKey.setComparedState(1);
 
         if(numbersFromCache.contains(row[SUBSCRIBER_NO])){
             context.write(comparedKey, new Text(valueCdr));
