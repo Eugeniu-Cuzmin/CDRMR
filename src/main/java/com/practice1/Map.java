@@ -14,12 +14,14 @@ public class Map extends Mapper<WritableComparable, Text, ComparedKey, Text> {
 
     @Override
     public void map(WritableComparable key, Text value, Context context) throws IOException, InterruptedException {
+        UtilClass utilClass = new UtilClass();
+
         //split string
         String[] row = value.toString().split("[|]", -1);
 
         //define key/value pairs
         String keyCdr = row[SUBSCRIBER_NO];
-        String valueCdr = row[CHANNEL_SEIZURE_DATE_TIME] + " " + row[SERVICE_TYPE];
+        String valueCdr = utilClass.getPeriod(row[CHANNEL_SEIZURE_DATE_TIME]) + " " + row[SERVICE_TYPE];
 
         ComparedKey comparedKey = new ComparedKey();
         comparedKey.setKey(keyCdr);

@@ -1,11 +1,7 @@
-0000000000	1_S_evening 1_V_day 
-902996760100000	2_V_evening 2_S_evening 1_V_night 2_V_morning 1_S_day 
-9029967602	4_V_evening 1_S_evening 3_S_day 2_V_day 
-90299676030000	9_S_day 1_V_day 
-9029967604	1_S_morning 2_V_morning 1_S_day 1_V_day 
-905000	1_V_evening 
-9050000001	26_V_evening 12_S_evening 25_S_day 24_V_day 
-9050000002	12_S_evening 12_V_day 
-9050000011	6_V_evening 6_S_day 6_V_day 
-9050000021	6_S_evening 6_S_day 
-9050000031	6_V_evening 6_S_evening 12_V_day 
+0000000000	2.82505251E8 RND 131.01 day V 1 evening S 
+902996760100000	5.78702664E8 RND 313.02 evening S 2 evening V 1 night V 2 morning V 1 day S 
+9029967602	6.2668527E7 RND 15.02 day V 1 evening S 4 evening V 3 day S 
+90299676030000	4.31409867E8 VIP 13.01 day V 9 day S 
+9029967604	1.93888947E8 VIP 13.01 day V 1 morning S 2 morning V 1 day S 
+905000	1.70074906E8 VIP 13.01 evening V 
+9050491245	9.0772452E7 VRN 13.012 day V 6 evening S 6 evening V 

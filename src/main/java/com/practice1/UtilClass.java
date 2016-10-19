@@ -1,9 +1,12 @@
 package com.practice1;
 
+import org.apache.hadoop.io.Text;
+import ru.at_consulting.bigdata.secondary_sort.ComparedKey;
+
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.Date;
+import java.util.*;
 
 public class UtilClass {
 
@@ -11,8 +14,7 @@ public class UtilClass {
     public static int foundString = 0;
 
     public String getPeriod(String s) {
-        split = s.split(" ");
-        return split[1] + "_" + convertToString(split[0]);
+        return convertToString(s);
     }
 
     private String convertToString(String s) {
@@ -35,12 +37,39 @@ public class UtilClass {
 
     public static String findString(String[] stringValue) {
         if(stringValue[3].equals("A") || stringValue[3].equals("S")){
-            foundString = 1;
+            UtilClass.foundString = 1;
             return stringValue[0] + " " + stringValue[1] + " " + stringValue[2] + " ";
         }
         else{
             return stringValue[0] + " " + stringValue[1] + " " + stringValue[2] + " ";
         }
+    }
 
+    public String findNumberOfCalls(Iterable<Text> values, ComparedKey key) {
+        HashMap<Text, Integer> m = new HashMap<>();
+        Text theKey = null;
+        String result = "";
+
+        //Populate the HashMap
+        for (Text value : values) {
+            String[] stringValue = value.toString().split(" ");
+            Text element = new Text(stringValue[0] + " " + stringValue[1]);
+
+            if (m.get(element) == null) {
+                m.put(element, 1);
+            } else {
+                m.put(element, m.get(element) + 1);
+            }
+        }
+
+        //Display the frequencies
+        for (java.util.Map.Entry<Text, Integer> entry : m.entrySet()) {
+            if (theKey != key.getKey()) {
+                result = "";
+                theKey = key.getKey();
+            }
+            result += entry.getValue() + " " + entry.getKey() + " ";
+        }
+        return result;
     }
 }
